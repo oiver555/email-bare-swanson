@@ -6,8 +6,44 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="css/main.css" />
     <script async defer src="https://buttons.github.io/button.js"></script>
+
+    <style>
+      @media only screen and (min-width: 960px) {
+        .collapsable {
+          width: 33%;
+        }
+        .collapsable-img {
+          width: 100px;
+        }
+        .collapsable-text {
+          font-size: 18px;
+        }
+      }
+      @media only screen and (max-width: 960px) {
+        .collapsable {
+          width: 100%;
+        }
+        .collapsable-img {
+          width: 350px;
+        }
+        .collapsable-text {
+          font-size: 25px;
+        }
+      }
+      @media only screen and (min-width: 600px) {
+        .collapsable {
+          width: 33%;
+        }
+        .collapsable-img {
+          width: 100px;
+        }
+        .collapsable-text {
+          font-size: 18px;
+        }
+      }
+    </style>
   </head>
-  <body style="background-color: black">
+  <body style="background-color: white">
     <table
       style="
         width: 100%;
@@ -24,7 +60,7 @@
           <table
             style="
               width: 600px;
-              background-color: greenyellow;
+              background-color: white;
               margin-left: auto;
               margin-right: auto;
               padding: 0;
@@ -37,11 +73,16 @@
             <tr>
               <td>
                 <table
-                  style="width: 100%; padding: 0; margin: 0; border-spacing: 0"
+                  class="header"
+                  style="
+                    width: 600px;
+                    padding: 0;
+                    margin: 25px 0;
+                    border-spacing: 0;
+                  "
                 >
                   <tr
                     style="
-                      background-color: green;
                       width: 100%;
                       padding: 0;
                       border-spacing: 0;
@@ -50,7 +91,13 @@
                   >
                     <td style="float: left">Plus up to 40% off nationwide</td>
                     <td style="float: right">
-                      <a href="#">View Online</a> | <a href="#">My Account</a>
+                      <a href="#" style="color: #00833d; text-decoration: none"
+                        >View Online</a
+                      >
+                      |
+                      <a href="#" style="color: #00833d; text-decoration: none"
+                        >My Account</a
+                      >
                     </td>
                   </tr>
                 </table>
@@ -75,33 +122,57 @@
                     border-spacing: 0;
                     border: 0;
                     text-align: center;
-                    margin-left: auto;
-                    margin-right: auto;
+                    margin: 10px auto;
+
+                    word-wrap: break-word;
                   "
                 >
                   <tr>
-                    <td>
-                      <a href="#">Heart</a>
-                    </td>
-                    <td>|</td>
-                    <td>
-                      <a href="#">Immune</a>
-                    </td>
-                    <td>|</td>
-                    <td>
-                      <a href="#">Blood Surgar</a>
-                    </td>
-                    <td>|</td>
-                    <td>
-                      <a href="#">Multivitamins</a>
-                    </td>
-                    <td>|</td>
-                    <td>
-                      <a href="#">CoQ10</a>
-                    </td>
-                    <td>|</td>
-                    <td>
-                      <a href="#">Protein</a>
+                    <td align="center">
+                      <div>
+                        <a
+                          style="color: #00833d; text-decoration: none"
+                          href="#"
+                          >Heart</a
+                        >
+                        <span style="padding: 0px 5px">|</span>
+
+                        <a
+                          style="color: #00833d; text-decoration: none"
+                          href="#"
+                          >Immune</a
+                        >
+
+                        <span style="padding: 0px 5px">|</span>
+                        <a
+                          style="color: #00833d; text-decoration: none"
+                          href="#"
+                          >Blood Surgar</a
+                        >
+
+                        <span style="padding: 0px 5px">|</span>
+
+                        <a
+                          style="color: #00833d; text-decoration: none"
+                          href="#"
+                          >Multivitamins</a
+                        >
+
+                        <span style="padding: 0px 5px">|</span>
+
+                        <a
+                          style="color: #00833d; text-decoration: none"
+                          href="#"
+                          >CoQ10</a
+                        >
+
+                        <span style="padding: 0px 5px">|</span>
+                        <a
+                          style="color: #00833d; text-decoration: none"
+                          href="#"
+                          >Protein</a
+                        >
+                      </div>
                     </td>
                   </tr>
                 </table>
@@ -156,11 +227,24 @@
                 margin: 0;
                 background-color: #00833d;
                 color: white;
+                width: 600px;
+                display: block;
               "
             >
-              <td style="padding: 0; margin: 0">
-                <table style="padding: 0; margin: 0">
-                  †Promo Code: SWANZ40H
+              <td style="width: 600px; padding: 5px 0">
+                <table style="display: block; width: 600px; margin: 0">
+                  <a
+                    href="#"
+                    style="
+                      font-size: 20px;
+                      font-weight: 500;
+                      color: white;
+                      text-decoration: none;
+                      font-family: Arial, Helvetica, sans-serif;
+                    "
+                  >
+                    Promo Code: SWANZ40H</a
+                  >
                 </table>
               </td>
             </tr>
@@ -178,48 +262,413 @@
               </td>
             </tr>
 
-            <tr style="background-color: red">
-              <td  style="width: 100px;border-collapse: collapse; background-color: yellow;">
-                <table>
-                  <tr>
-                    <td>
-                      <img
-                       style="width: 33%;" src="./assets/img/D3.png"
-                        alt=""
-                      />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <a href="#">SHOP NOW</a>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-
+            <!-- SHOP NOW -->
+            <tr>
               <td>
-                <table>
+                <table class="collapsable" align="left">
                   <tr>
                     <td>
                       <img
-                        style="width: 83%"
+                        class="collapsable-img"
                         src="./assets/img/D3.png"
                         alt=""
                       />
                     </td>
                   </tr>
                   <tr>
+                    <td style="padding: 20px 0px">
+                      <a
+                        class="collapsable-text"
+                        style="
+                          color: #d85614;
+                          font-family: Arial, Helvetica, sans-serif;
+                          font-weight: 600;
+                        "
+                        href="#"
+                        >SHOP NOW</a
+                      >
+                    </td>
+                  </tr>
+                </table>
+
+                <table class="collapsable" align="left">
+                  <tr>
                     <td>
-                      <a href="#">SHOP NOW</a>
+                      <img
+                        class="collapsable-img"
+                        src="./assets/img/D3.png"
+                        alt=""
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 20px 0px">
+                      <a
+                        class="collapsable-text"
+                        style="
+                          color: #d85614;
+                          font-family: Arial, Helvetica, sans-serif;
+                          font-weight: 600;
+                        "
+                        href="#"
+                        >SHOP NOW</a
+                      >
+                    </td>
+                  </tr>
+                </table>
+
+                <table class="collapsable" align="left">
+                  <tr>
+                    <td>
+                      <img
+                        class="collapsable-img"
+                        src="./assets/img/D3.png"
+                        alt=""
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 20px 0px">
+                      <a
+                        class="collapsable-text"
+                        style="
+                          color: #d85614;
+                          font-family: Arial, Helvetica, sans-serif;
+                          font-weight: 600;
+                        "
+                        href="#"
+                        >SHOP NOW</a
+                      >
                     </td>
                   </tr>
                 </table>
               </td>
+            </tr>
+
+            <!-- 50% OFF -->
+            <tr>
               <td>
-                <table>
-                  <img style="width: 33%" src="./assets/img/D3.png" alt="" />
-                  <a href="#">SHOP NOW</a>
+                <img
+                  style="width: 600px; display: block"
+                  src="./assets/img/swanson_vision.png"
+                  alt=""
+                />
+              </td>
+            </tr>
+
+            <!-- Healthy Made Easier -->
+            <tr>
+              <td>
+                <img
+                  style="width: 600px; display: block"
+                  src="./assets/img/healthy_made_easier.jpg"
+                  alt=""
+                />
+              </td>
+            </tr>
+
+            <!-- Heart Health Destination -->
+            <tr>
+              <td>
+                <img
+                  style="width: 600px; display: block"
+                  src="./assets/img/heart_health_destination.jpg"
+                  alt=""
+                />
+              </td>
+            </tr>
+
+            <!-- Stronger Foundation -->
+            <tr>
+              <td>
+                <img
+                  style="width: 600px; display: block"
+                  src="./assets/img/build_a_stronger_foundation.jpg"
+                  alt=""
+                />
+              </td>
+            </tr>
+
+            <!-- Heart Health Month -->
+            <tr>
+              <td>
+                <img
+                  style="width: 600px; display: block"
+                  src="./assets/img/heart_health_month.png"
+                  alt=""
+                />
+              </td>
+            </tr>
+
+            <!-- Enjoy Better Health  -->
+            <tr>
+              <td>
+                <img
+                  style="width: 600px; display: block"
+                  src="./assets/img/shop_now.jpg"
+                  alt=""
+                />
+              </td>
+            </tr>
+
+            <!-- Stay in the know -->
+            <tr>
+              <td>
+                <img
+                  style="width: 600px; display: block"
+                  src="./assets/img/stay_in_the_know.jpg"
+                  alt=""
+                />
+              </td>
+            </tr>
+
+            <!-- Bestsellers -->
+            <tr>
+              <td>
+                <img
+                  style="width: 600px; display: block"
+                  src="./assets/img/bestsellers.png"
+                  alt=""
+                />
+              </td>
+            </tr>
+
+            <!-- SHOP NOW -->
+            <tr>
+              <td>
+                <table class="collapsable" align="left">
+                  <tr>
+                    <td>
+                      <img
+                        class="collapsable-img"
+                        src="./assets/img/nac.png"
+                        alt=""
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 20px 0px">
+                      <a
+                        class="collapsable-text"
+                        style="
+                          color: #d85614;
+                          font-family: Arial, Helvetica, sans-serif;
+                          font-weight: 600;
+                        "
+                        href="#"
+                        >SHOP NOW</a
+                      >
+                    </td>
+                  </tr>
                 </table>
+                <table class="collapsable" align="left">
+                  <tr>
+                    <td>
+                      <img
+                        class="collapsable-img"
+                        src="./assets/img/c-1000.png"
+                        alt=""
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 20px 0px">
+                      <a
+                        class="collapsable-text"
+                        style="
+                          color: #d85614;
+                          font-family: Arial, Helvetica, sans-serif;
+                          font-weight: 600;
+                        "
+                        href="#"
+                        >SHOP NOW</a
+                      >
+                    </td>
+                  </tr>
+                </table>
+                <table class="collapsable" align="left">
+                  <tr>
+                    <td>
+                      <img
+                        class="collapsable-img"
+                        src="./assets/img/coQ10.png"
+                        alt=""
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 20px 0px">
+                      <a
+                        class="collapsable-text"
+                        style="
+                          color: #d85614;
+                          font-family: Arial, Helvetica, sans-serif;
+                          font-weight: 600;
+                        "
+                        href="#"
+                        >SHOP NOW</a
+                      >
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- Wants to keep Learning -->
+            <tr>
+              <td
+                style="
+                  color: #00833d;
+                  font-size: 16x;
+                  font-weight: 600;
+                  font-family: helvetica, sans-serif;
+                  padding: 15px 0px;
+                "
+              >
+                Want to keeep Learning? Follow us on social.
+              </td>
+            </tr>
+
+            <!-- Social Media Icons -->
+            <tr>
+              <td>
+                <table style="margin-left: auto; margin-right: auto">
+                  <tr>
+                    <td>
+                      <a href="#"
+                        ><img
+                          style="width: 35px; margin: 0px 5px"
+                          src="./assets/img/facebook.png"
+                          alt=""
+                      /></a>
+                    </td>
+                    <td>
+                      <a href="#"
+                        ><img
+                          style="width: 35px; margin: 0px 5px"
+                          src="./assets/img/twitter.png"
+                          alt=""
+                      /></a>
+                    </td>
+                    <td>
+                      <a href="#"
+                        ><img
+                          style="width: 35px; margin: 0px 5px"
+                          src="./assets/img/instagram.png"
+                          alt=""
+                      /></a>
+                    </td>
+                    <td>
+                      <a href="#"
+                        ><img
+                          style="width: 35px; margin: 0px 5px"
+                          src="./assets/img/pintrest.png"
+                          alt=""
+                      /></a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- Support Health -->
+            <tr>
+              <td>
+                <img
+                  style="width: 600px; display: block"
+                  src="./assets/img/support_your_heart.png"
+                  alt=""
+                />
+              </td>
+            </tr>
+
+            <!-- Fine Print -->
+            <tr>
+              <td style="color: #5d5d5d; padding: 8px 0px">
+                Offer expires 11:59 PM CST Tuesday, February 28, 2023.
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                style="
+                  color: #454545;
+                  padding: 8px 0;
+                  text-align: center;
+                  font-weight: bold;
+                "
+              >
+                Call to order: 1-866-921-0037
+              </td>
+            </tr>
+
+            <tr>
+              <td style="color: #5d5d5d; padding: 8px 0; text-align: left">
+                Please do not reply to this message as this email inbox is not
+                monitored. If you have any questions, please call 800-824-4491.
+              </td>
+            </tr>
+
+            <tr>
+              <td style="color: #5d5d5d; padding: 8px 0; text-align: left">
+                *Promotional offer is available to US and Canada residents only.
+                Order total must meet or exceed the qualifying threshold before
+                shipping and taxes. Shipping may be subject to exclusions and a
+                surcharge. Gift certificate purchases, charitable donations, and
+                select Swanson/National items are excluded. Limit one offer per
+                order. Pricing, availability, and expiration are subject to
+                change and other restrictions may apply. Promotional offers may
+                not be applied to items already marked down (Facebook promos,
+                buy-one-get-one-free (BOGO) offers, Deal of the Day discounts,
+                etc.). Please allow extra processing time for international
+                orders which qualify for free gifts to ensure compliance with
+                customs. Shipment of CBD products is available to US residents
+                only. Swanson offers a full refund for products 30 days from
+                date of purchase. See site for full
+                <a href="#" style="color: #00833d">promo details</a>.
+              </td>
+            </tr>
+
+            <tr>
+              <td style="color: #5d5d5d; padding: 8px 0; text-align: left">
+                Enter the promo code in the "Promo/Source Code" box in the
+                shopping cart screen before checkout.
+              </td>
+            </tr>
+
+            <tr>
+              <td style="color: #5d5d5d; padding: 8px 0; text-align: left">
+                By signing up via text, you agree to receive recurring automated
+                promotional and personalized marketing text messages (e.g. cart
+                reminders) from Swanson Health at the cell number used when
+                signing up. Consent is not a condition of any purchase. Reply
+                HELP for help and STOP to cancel. Msg frequency varies. Msg and
+                data rates may apply. View
+                <a href="#" style="color: #00833d">Terms</a> &
+                <a href="#" style="color: #00833d">Privacy</a>.
+              </td>
+            </tr>
+
+            <tr>
+              <td style="color: #5d5d5d; padding: 8px 0; text-align: left">
+                This shopping alert was sent as a special courtesy to
+                <a href="#" style="text-decoration: none"
+                  >osaintilien55@gmail.com</a
+                >, the address provided during checkout or at time of
+                subscription.
+                <br />
+                If you prefer not to receive future alerts, please
+              </td>
+            </tr>
+
+            <tr>
+              <td style="color: #5d5d5d; padding: 8px 0; text-align: left">
+                Swanson Health Products •
+                <a href="#" style="text-decoration: none"
+                  >4075 40th Ave S • Fargo, ND, 58104, US</a
+                >
+                <br />
+                ©2023 Swanson Health Products. All rights reserved.
               </td>
             </tr>
           </table>
