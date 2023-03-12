@@ -15,6 +15,9 @@
         .collapsable-img {
           width: 100px;
         }
+        .hideable {
+          display: initial;
+        }
         .collapsable-text {
           font-size: 18px;
         }
@@ -22,6 +25,9 @@
       @media only screen and (max-width: 960px) {
         .collapsable {
           width: 100%;
+        }
+        .hideable {
+          display: none;
         }
         .collapsable-img {
           width: 350px;
@@ -36,6 +42,12 @@
         }
         .collapsable-img {
           width: 100px;
+        }
+        .collapsable-img {
+          width: 100px;
+        }
+        .hideable {
+          display: initial;
         }
         .collapsable-text {
           font-size: 18px;
@@ -145,12 +157,13 @@
 
                         <span style="padding: 0px 5px">|</span>
                         <a
+                          class="hideable"
                           style="color: #00833d; text-decoration: none"
                           href="#"
                           >Blood Surgar</a
                         >
 
-                        <span style="padding: 0px 5px">|</span>
+                        <span class="hideable" style="padding: 0px 5px">|</span>
 
                         <a
                           style="color: #00833d; text-decoration: none"
@@ -166,8 +179,9 @@
                           >CoQ10</a
                         >
 
-                        <span style="padding: 0px 5px">|</span>
+                        <span class="hideable" style="padding: 0px 5px">|</span>
                         <a
+                          class="hideable"
                           style="color: #00833d; text-decoration: none"
                           href="#"
                           >Protein</a
